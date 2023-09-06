@@ -1,1 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Binair stelsel</title>
+<meta charset="UTF-8"
+</head>
+<body>
+    Uitleg over het binaire stelsel
+    
+    : <a href=index.html"url">Home</a> <!--link terug naar de homepage-->
+    <a href=binairstelsel.html"url">Uitleg pver binairstelsel</a> <!--link terug naar binairsetlsel-->
 
+</body>
+</html>
