@@ -2,47 +2,44 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Binair naar Decimaal Converter</title>
+    <title>Mijn Homepage</title>
 </head>
 <body>
     <header>
-        <h1>Binair naar Decimaal Converter</h1>
+        <h1>Welkom op mijn Homepage</h1>
     </header>
 
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Binair naar Decimaal</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Over Ons</a></li>
+            <li><a href="#">Diensten</a></li>
+            <li><a href="binary.html">Binair naar Decimaal</a></li>
+            <!-- Hier hebben we de link naar de binaire pagina toegevoegd -->
         </ul>
     </nav>
 
     <section>
-        <h2>Converteer een binair getal naar decimaal</h2>
-        <form id="binaryForm">
-            <label for="binaryInput">Voer een binair getal in:</label>
-            <input type="text" id="binaryInput" name="binaryInput" required>
-            <button type="button" onclick="convertBinaryToDecimal()">Converteer</button>
-        </form>
-        <p id="decimalResult"></p>
+        <h2>Over Ons</h2>
+        <p>Wij zijn een fantastisch team dat geweldige dingen doet.</p>
     </section>
 
-    <script>
-        function convertBinaryToDecimal() {
-            const binaryInput = document.getElementById('binaryInput').value;
-            const decimalResult = document.getElementById('decimalResult');
+    <section>
+        <h2>Onze Diensten</h2>
+        <ul>
+            <li>Webdesign</li>
+            <li>Webontwikkeling</li>
+            <li>SEO-optimalisatie</li>
+        </ul>
+    </section>
 
-            // Controleer of de invoer een geldig binair getal is
-            if (/^[01]+$/.test(binaryInput)) {
-                const decimalValue = parseInt(binaryInput, 2);
-                decimalResult.textContent = `Het decimale equivalent is: ${decimalValue}`;
-            } else {
-                decimalResult.textContent = 'Ongeldige invoer. Voer een geldig binair getal in.';
-            }
-        }
-    </script>
+    <section>
+        <h2>Contacteer Ons</h2>
+        <p>Heb je vragen? Neem gerust contact met ons op.</p>
+    </section>
 
     <footer>
-        <p>&copy; 2023 Mijn Binaire Website</p>
+        <p>&copy; 2023 Mijn Homepage</p>
     </footer>
 </body>
 </html>
