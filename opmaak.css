@@ -2,26 +2,48 @@ p {
   text-align: center;
   color: rgba(212, 148, 209, 0.849);
 } 
-.icon-bar {
-  width: 100%; /* Full-width */
-  background-color: #555; /* Dark-grey background */
-  overflow: auto; /* Overflow due to float */
+{margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-.icon-bar a {
-  float: left; /* Float links side by side */
-  text-align: center; /* Center-align text */
-  width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
-  padding: 12px 0; /* Some top and bottom padding */
-  transition: all 0.3s ease; /* Add transition for hover effects */
-  color: white; /* White text color */
-  font-size: 36px; /* Increased font size */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-.icon-bar a:hover {
-  background-color: #000; /* Add a hover color */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
 }
 
-.active {
-  background-color: #04AA6D; /* Add an active/current color */
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
 }
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="overons.html">schilderijen</a>
+  <a href="binairstelsel.html">kamer</a>
+</div>
+
+<div class="main">
+  <h1>Fixed Top Menu</h1>
+  <h2>Scroll this page to see the effect</h2>
+  <h2>The navigation bar will stay at the top of the page while scrolling</h2>
+
