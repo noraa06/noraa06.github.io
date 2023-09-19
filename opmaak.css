@@ -1,17 +1,13 @@
-p {
-  text-align: center;
-  color: rgba(212, 148, 209, 0.849);
-} 
-{margin:0;}
-
+/* The navigation bar */
 .navbar {
   overflow: hidden;
   background-color: #333;
-  position: fixed;
-  top: 0;
-  width: 100%;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
 }
 
+/* Links inside the navbar */
 .navbar a {
   float: left;
   display: block;
@@ -21,10 +17,6 @@ p {
   text-decoration: none;
   font-size: 17px;
 }
-
-.navbar a:hover {
-  background: #ddd;
-  color: black;
 }
 
 .main {
@@ -32,18 +24,13 @@ p {
   margin-top: 30px;
   height: 1500px; /* Used in this example to enable scrolling */
 }
-</style>
-</head>
-<body>
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
 
-<div class="navbar">
-  <a href="index.html">Home</a>
-  <a href="overons.html">schilderijen</a>
-  <a href="binairstelsel.html">kamer</a>
-</div>
-
-<div class="main">
-  <h1>Fixed Top Menu</h1>
-  <h2>Scroll this page to see the effect</h2>
-  <h2>The navigation bar will stay at the top of the page while scrolling</h2>
-
+/* Main content */
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
