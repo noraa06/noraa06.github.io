@@ -1,36 +1,58 @@
-/* The navigation bar */
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
+body {
+  background-color: blanchedalmond;
 }
 
-/* Links inside the navbar */
+        body {margin:0;}
+        .navbar {
+overflow: hidden;
+background-color: #333;
+position: fixed;
+top: 0;
+width: 100%;
+}
+
 .navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
+float: left;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
 }
 
-.main {
-  padding: 16px;
-  margin-top: 30px;
-  height: 1500px; /* Used in this example to enable scrolling */
-}
-/* Change background on mouse-over */
 .navbar a:hover {
-  background: #ddd;
-  color: black;
+background: #ddd;
+color: rgb(112, 103, 103);
 }
 
-/* Main content */
 .main {
-  margin-top: 30px; /* Add a top margin to avoid content overlay */
+padding: 16px;
+margin-top: 30px;
+height: 1500px; /* Used in this example to enable scrolling */
 }
+</style>
+</head>
+<body>
+
+<div class="navbar">
+<a href="index.html">Homepage</a>
+<a href="binairstelsel.html">kamer</a>
+<a href="overons.html">Schiklderijen</a>
+<a href="bureau.html">Bureau</a>
+</div>
+
+
+      
+        
+      <div class="navbar">
+          <a href="index.html">Homepage</a>
+
+
+          <a href="binairstelsel.html">Kamer</a>
+
+
+          <a href="overons.html">Schilderijen</a>
+
+          <a href="bureau.html">Bureau</a>
+       </div>
