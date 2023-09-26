@@ -1,7 +1,6 @@
 body {
   background-color: rgba(248, 221, 210, 0.192);
   margin:0;
-  background-image: url("info.png");
 }
 
 
@@ -9,6 +8,7 @@ body {
 .navbar {
   overflow: hidden;
   background-color: #d63ea4ad;
+  background-image: url("info.png");
   position: fixed;
   top: 0;
   width: 100%;
