@@ -69,3 +69,8 @@ footer {
   bottom: 0;
   width: 100%;
 }
+.container {
+  display: grid;
+  grid-template-rows: 1fr auto; /* 1fr voor de inhoud, auto voor de footer */
+  min-height: 100vh; /* Minimale hoogte van het scherm */
+}
