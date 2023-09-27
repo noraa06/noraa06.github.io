@@ -50,8 +50,8 @@ div.figure p {
   text-indent: 0;
 }
 footer {
-  background-color: #000000; /* Blauwe achtergrondkleur */
+  background-color: #b95eb5; /* roze achtergrondkleur */
   color: #ffffff; /* Witte tekstkleur */
-  padding: 20px; /* Ruimte rondom de inhoud in de footer */
+  padding: 15px; /* Ruimte rondom de inhoud in de footer */
   text-align: center; /* Tekst gecentreerd in de footer */
 }
