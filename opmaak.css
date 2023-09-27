@@ -64,3 +64,8 @@ footer {
 footer {
   margin-top: auto; /* Duw de footer naar de onderkant */
 }
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
