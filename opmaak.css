@@ -2,14 +2,17 @@ body {
   background-color: rgba(248, 221, 210, 0.192);
   margin:0;
 }
-
-.navbar {
+       body {margin:0;}
+       .navbar {
   overflow: hidden;
   background-color: #d63ea4ad;
   background-image: url("informaticaa.jpg");
   position: fixed;
   top: 0;
   width: 100%;
+}
+  body {
+  text-align:left;
 }
 
 .navbar a {
