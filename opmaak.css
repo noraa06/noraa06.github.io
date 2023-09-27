@@ -55,3 +55,12 @@ footer {
   padding: 15px; /* Ruimte rondom de inhoud in de footer */
   text-align: center; /* Tekst gecentreerd in de footer */
 }
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Minimale hoogte van het scherm */
+}
+
+footer {
+  margin-top: auto; /* Duw de footer naar de onderkant */
+}
