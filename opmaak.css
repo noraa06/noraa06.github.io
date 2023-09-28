@@ -1,18 +1,4 @@
- /* CSS-stijl voor het logo-container */
- .logo {
-  background-image: url('jn0aublj.png'); /* Vervang 'jouw-afbeelding.jpg' door het pad naar je eigen afbeelding */
-  background-size: contain; /* Pas de grootte van de achtergrondafbeelding aan */
-  width: 200px; /* Breedte van het logo-container */
-  height: 100px; /* Hoogte van het logo-container */
-  text-align: center; /* Centreer de tekst verticaal en horizontaal */
-  color: #ffffff; /* Tekstkleur aanpassen */
-  font-size: 24px; /* Lettergrootte aanpassen */
-}
-body {
-  background-color: rgba(248, 221, 210, 0.192);
-  margin:0;
-}
-       body {margin:0;}
+ body {margin:0;}
        .navbar {
   overflow: hidden;
   background-color: #d63ea4ad;
