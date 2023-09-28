@@ -66,6 +66,12 @@ div.figure p {
   color: #10010874;
   padding: 10px; /* Voeg wat ruimte rondom de tekst toe voor betere leesbaarheid */
 }
+.container {
+  display: flex;
+  justify-content: center; /* Horizontaal centreren */
+  align-items: center; /* Verticaal centreren */
+  height: 100vh; /* Volledige hoogte van het venster */
+}
 footer {
   background-color: #b95eb5; /* roze achtergrondkleur */
   color: #ffffff; /* Witte tekstkleur */
