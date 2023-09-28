@@ -52,7 +52,7 @@ div.figure p {
  /* CSS-regels voor de container die zowel de afbeelding als de tekst bevat */
  .container {
   position: relative; /* Zorg ervoor dat de positionering relatief is voor absolute positionering binnenin */
-  width: 300px; /* Pas de breedte van de container aan aan je behoeften */
+  width: 600px; /* Pas de breedte van de container aan aan je behoeften */
 }
 
 /* CSS-regels voor de afbeelding */
@@ -67,6 +67,7 @@ div.figure p {
   left: 0; /* Plaats de tekst helemaal links binnenin de container */
   transform: translateY(-50%); /* Centreer de tekst verticaal */
   background-color: rgba(255, 255, 255, 0.7); /* Voeg een semi-transparante achtergrond toe aan de tekst voor leesbaarheid */
+  color: #f30d8074;
   padding: 10px; /* Voeg wat ruimte rondom de tekst toe voor betere leesbaarheid */
 }
 footer {
