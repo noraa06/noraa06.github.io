@@ -52,7 +52,7 @@ div.figure p {
  /* CSS-regels voor de container die zowel de afbeelding als de tekst bevat */
  .container {
   position: relative; /* Zorg ervoor dat de positionering relatief is voor absolute positionering binnenin */
-  width: 600px; /* Pas de breedte van de container aan aan je behoeften */
+  width: 300px; /* Pas de breedte van de container aan aan je behoeften */
 }
 
 /* CSS-regels voor de afbeelding */
