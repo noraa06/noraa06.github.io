@@ -62,8 +62,8 @@ div.figure p {
   top: 50%; /* Plaats de tekst verticaal in het midden van de container */
   left: 0; /* Plaats de tekst helemaal links binnenin de container */
   transform: translateY(-50%); /* Centreer de tekst verticaal */
-  background-color: rgba(255, 255, 255, 0.7); /* Voeg een semi-transparante achtergrond toe aan de tekst voor leesbaarheid */
-  color: #f30d8074;
+  background-color: rgba(171, 131, 131, 0.7); /* Voeg een semi-transparante achtergrond toe aan de tekst voor leesbaarheid */
+  color: #10010874;
   padding: 10px; /* Voeg wat ruimte rondom de tekst toe voor betere leesbaarheid */
 }
 footer {
