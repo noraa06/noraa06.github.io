@@ -48,6 +48,20 @@ div.figure p {
 body {
   background-color: rgba(234, 156, 229, 0.57); /* Hier stel je de achtergrondkleur in */
 }
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #b01ac4;
+}
  /* CSS-regels voor de container die zowel de afbeelding als de tekst bevat */
  .container {
   position /* Zorg ervoor dat de positionering relatief is voor absolute positionering binnenin */
