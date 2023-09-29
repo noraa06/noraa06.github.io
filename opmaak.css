@@ -68,19 +68,21 @@ th {
   width: 300px /* Pas de breedte van de container aan aan je behoeften */
 }
 
-/* Stijl voor de tekst op de afbeelding */
-.tekst-op-afbeelding {
-  position: relative;
-  text-align: center;
+/* Stijl voor de tekst op de foto */
+.tekst-op-foto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-size: 24px;
   color: white;
-  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
 }
 
 /* Stijl voor de afbeelding */
 .afbeelding {
-  width: 100%;
-  max-width: 800px; /* Pas dit aan op basis van je afbeeldingsgrootte */
+  max-width: 100%;
 }
 footer {
   background-color: #b95eb5; /* roze achtergrondkleur */
