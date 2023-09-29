@@ -68,26 +68,19 @@ th {
   width: 300px /* Pas de breedte van de container aan aan je behoeften */
 }
 
-/* CSS-regels voor de afbeelding */
-.image {
-  width: 100%; /* Laat de afbeelding de volledige breedte van de container innemen */
+/* Stijl voor de tekst op de afbeelding */
+.tekst-op-afbeelding {
+  position: relative;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  padding: 20px;
 }
 
-/* CSS-regels voor de tekst */
-.text {
-  position: absolute; /* Stel absolute positionering in om tekst over de afbeelding te plaatsen */
-  top: 50%; /* Plaats de tekst verticaal in het midden van de container */
-  left: 0; /* Plaats de tekst helemaal links binnenin de container */
-  transform: translateY(-50%); /* Centreer de tekst verticaal */
-  background-color: rgba(171, 131, 131, 0.7); /* Voeg een semi-transparante achtergrond toe aan de tekst voor leesbaarheid */
-  color: #10010874;
-  padding: 10px; /* Voeg wat ruimte rondom de tekst toe voor betere leesbaarheid */
-}
-.container {
-  display: flex;
-  justify-content: center; /* Horizontaal centreren */
-  align-items: center; /* Verticaal centreren */
-  height: 100vh; /* Volledige hoogte van het venster */
+/* Stijl voor de afbeelding */
+.afbeelding {
+  width: 100%;
+  max-width: 800px; /* Pas dit aan op basis van je afbeeldingsgrootte */
 }
 footer {
   background-color: #b95eb5; /* roze achtergrondkleur */
@@ -99,12 +92,4 @@ footer {
   display: grid;
   grid-template-rows: 1fr auto; /* 1fr voor de inhoud, auto voor de footer */
   min-height: 100vh; /* Minimale hoogte van het scherm */
-}
-/* CSS-stijlen om tekst verticaal in het midden te plaatsen */
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 300px; /* Hier kun je de gewenste hoogte van de container aanpassen */
-  border: 1px solid #ccc; /* Optionele rand om de container zichtbaar te maken */
 }
