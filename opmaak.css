@@ -100,3 +100,10 @@ footer {
   grid-template-rows: 1fr auto; /* 1fr voor de inhoud, auto voor de footer */
   min-height: 100vh; /* Minimale hoogte van het scherm */
 }
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Hiermee wordt de volledige hoogte van het scherm gebruikt */
+  margin: 0;
+}
