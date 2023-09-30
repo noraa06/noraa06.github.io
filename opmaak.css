@@ -64,8 +64,8 @@ th {
 }
  /* CSS-regels voor de container die zowel de afbeelding als de tekst bevat */
  .container {
-  position /* Zorg ervoor dat de positionering relatief is voor absolute positionering binnenin */
-  width: 300px /* Pas de breedte van de container aan aan je behoeften */
+  position: relative; /* Zorg ervoor dat de positionering relatief is voor absolute positionering binnenin */
+  width: 100%; /* Pas de breedte van de container aan aan je behoeften */
 }
 /* Stijl voor de tekst op de foto */
 .tekst-op-foto{
@@ -82,7 +82,7 @@ th {
 }
 /* Stijl voor de afbeelding */
 .afbeelding {
-  max-width: 100%;
+  position: absolute;
 }
 footer {
   background-color: #b95eb5; /* roze achtergrondkleur */
