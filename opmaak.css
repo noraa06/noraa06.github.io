@@ -66,6 +66,7 @@ th {
  .container {
   position: relative; /* Zorg ervoor dat de positionering relatief is voor absolute positionering binnenin */
   width: 100%; /* Pas de breedte van de container aan aan je behoeften */
+  height: 200px;
 }
 /* Stijl voor de tekst op de foto */
 .tekst-op-foto{
