@@ -3,6 +3,7 @@
   overflow: hidden;
   background-color: #d63ea4ad;
   background-image: url("informaticaa.jpg");  
+  position: fixed;
   top: 0;
   width: 100%;
 }
@@ -16,7 +17,7 @@
   color: #250606;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
+  text-decoration: white;
   font-size: 17px;
 }
 
