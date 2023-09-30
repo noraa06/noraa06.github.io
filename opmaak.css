@@ -68,7 +68,7 @@ th {
   width: 300px /* Pas de breedte van de container aan aan je behoeften */
 }
 /* Stijl voor de tekst op de foto */
-.tekst-op-foto {
+.tekst-op-foto{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -77,6 +77,8 @@ th {
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif; /* Lettertypefamilie */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optionele tekstschaduw */
 }
 /* Stijl voor de afbeelding */
 .afbeelding {
