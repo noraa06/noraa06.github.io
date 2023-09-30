@@ -83,6 +83,7 @@ th {
 /* Stijl voor de afbeelding */
 .afbeelding {
   position: absolute;
+  width: 100%;
 }
 footer {
   background-color: #b95eb5; /* roze achtergrondkleur */
