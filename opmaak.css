@@ -1,9 +1,9 @@
-html{
+html{   /* Grootte etc van pagina's */
   min-height: 100%;
   position: relative;
   margin:0;
 }
-body {
+body { /* Wat er in de body is wordt bewerkt naar hieronderstaande voorkeuren */
   margin:0;
   text-align:center;
   background-color: rgba(234, 156, 229, 0.57); /* Hier stel je de achtergrondkleur in */
@@ -14,15 +14,15 @@ body {
   position: absolute;
   width: 100%;
 }
-header{
+header{  /* Wat in de headers is wordt op deze voorkeuren bijgewerkt */
   position: sticky;
   top:0;
   z-index: 1; /*zodat de nav niet overlapt wordt door andere dingen tijdens scrollen*/
 }
 .navbar {
   background-color: white;
-  background-image: url("informaticaa.jpg");  
-  padding: 24px;
+  background-image: url("informaticaa.jpg");   /* foto voor menu */
+  padding: 24px;  /* Grootte menu */
   box-shadow: 0px 2px 5px #aaa;
 }
 #nav-bar-item{
@@ -31,12 +31,12 @@ header{
   text-decoration: none;
 }
 
-#nav-bar-item:hover {
+#nav-bar-item:hover { /* Wanneer je met muis over de hoever gaat*/
   background: #ddd;
   color: rgb(112, 103, 103);
 }
 
-main {
+main {  /* voor de footer*/
   padding: 0;
   margin:0;
   flex-grow: 1; /* zodat de footer op de bodem blijft als de pagina groter wordt*/
@@ -49,28 +49,28 @@ main {
    flex-grow: 1; /* zodat de footer op de bodem blijft als de pagina groter wordt*/
 }
 
-section{
+section{  /* Hoe section in elkaar zitten */
   display: inline-block;
   text-align: center;
   padding-left: 33%;
   padding-right: 33%;
 }
 
-div.figure {
+div.figure {  /* foto's  */
   float: right;
   width: 30%;
   border: thin silver solid;
   margin: 0.5em;
   padding: 0.5em;
 }
-div.figure p {
+div.figure p {  /* Voor tekst */
   text-align: center;
   font-style: italic;
   font-size: smaller;
   text-indent: 0;
 }
 
-table {
+table {   /* Hier zijn de instellingen voor de tabel */
   border-collapse: collapse;
   width: 100%;
 }
