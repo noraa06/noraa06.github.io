@@ -1,35 +1,59 @@
- body {margin:0;}
-       .navbar {
-  overflow: hidden;
-  background-color: #d63ea4ad;
-  background-image: url("informaticaa.jpg");  
-  position: fixed;
-  top: 0;
+html{
+  min-height: 100%;
+  position: relative;
+  margin:0;
+}
+body {
+  margin:0;
+  text-align:center;
+  background-color: rgba(234, 156, 229, 0.57); /* Hier stel je de achtergrondkleur in */
+  padding:0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  position: absolute;
   width: 100%;
 }
-  body {
-  text-align:center;
+header{
+  position: sticky;
+  top:0;
+  z-index: 1; /*zodat de nav niet overlapt wordt door andere dingen tijdens scrollen*/
+}
+.navbar {
+  background-color: white;
+  background-image: url("informaticaa.jpg");  
+  padding: 24px;
+  box-shadow: 0px 2px 5px #aaa;
+}
+#nav-bar-item{
+  color: black;
+  padding: 24px;
+  text-decoration: none;
 }
 
-.navbar a {
-  float: left;
-  display: block;
-  color: #250606;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration:none;
-  font-size: 17px;
-}
-
-.navbar a:hover {
+#nav-bar-item:hover {
   background: #ddd;
   color: rgb(112, 103, 103);
 }
 
-.main {
-  padding: 16px;
-  margin-top: 30px;
-  height: 1500px; /* Used in this example to enable scrolling */
+main {
+  padding: 0;
+  margin:0;
+  flex-grow: 1; /* zodat de footer op de bodem blijft als de pagina groter wordt*/
+}
+
+#algemeen{
+   height: 1500px; /* Used in this example to enable scrolling */
+   padding: 0;
+   margin:0;
+   flex-grow: 1; /* zodat de footer op de bodem blijft als de pagina groter wordt*/
+}
+
+section{
+  display: inline-block;
+  text-align: center;
+  padding-left: 33%;
+  padding-right: 33%;
 }
 
 div.figure {
@@ -45,9 +69,7 @@ div.figure p {
   font-size: smaller;
   text-indent: 0;
 }
-body {
-  background-color: rgba(234, 156, 229, 0.57); /* Hier stel je de achtergrondkleur in */
-}
+
 table {
   border-collapse: collapse;
   width: 100%;
@@ -62,13 +84,12 @@ th, td {
 th {
   background-color: #b01ac4;
 }
- /* CSS-regels voor de container die zowel de afbeelding als de tekst bevat */
- .container {
-  position: relative; /* Zorg ervoor dat de positionering relatief is voor absolute positionering binnenin */
-  width: 100%; /* Pas de breedte van de container aan aan je behoeften */
-  height: 200px;
+
+.containerAlgemeen{
+  position: relative;
+  width: 100%;
 }
-/* Stijl voor de tekst op de foto */
+
 .tekst-op-foto{
   position: absolute;
   top: 50%;
@@ -76,21 +97,21 @@ th {
   transform: translate(-50%, -50%);
   font-size: 24px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.5);
   padding: 10px;
   font-family: Georgia, 'Times New Roman', Times, serif; /* Lettertypefamilie */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optionele tekstschaduw */
 }
 /* Stijl voor de afbeelding */
 .afbeelding {
-  position: absolute;
-  width: 100%;
+  width:100%;
+  height: 450px;
 }
 footer {
   background-color: #b95eb5; /* roze achtergrondkleur */
   color: #ffffff; /* Witte tekstkleur */
   padding: 15px; /* Ruimte rondom de inhoud in de footer */
   text-align: center; /* Tekst gecentreerd in de footer */
+  margin-top: auto;
 }
 .container {
   display: grid;
