@@ -1,0 +1,80 @@
+<head>
+  <body>
+    <script>
+    
+    var aantal;
+
+    window.alert("Geef aantal getallen op");
+    aantal = Number(window.prompt('Enter a value for aantal'));
+    window.alert("Wilt u van groot naar klein (g naar k)of van klein naar groot (k naar g) sorteren?");
+    var volgorde;
+
+    volgorde = window.prompt('Enter a value for volgorde');
+    if (volgorde == "k naar g") {
+        var nummers = new Array(aantal);
+        var teller;
+
+        for (teller = 0; teller <= nummers.length - 1; teller++) {
+            nummers[teller] = Math.floor(Math.random() * 100);
+        }
+        weergaveArray(nummers);
+        sorteer2(nummers);
+    } else {
+        var nummers = new Array(aantal);
+        var teller;
+
+        for (teller = 0; teller <= nummers.length - 1; teller++) {
+            nummers[teller] = Math.floor(Math.random() * 100);
+        }
+        weergaveArray(nummers);
+        sorteer1(nummers);
+    }
+
+
+function sorteer1(nummers) {
+    var i;
+    var j;
+    var temp;
+
+    for (i = 0; i <= nummers.length - 1; i++) {
+        for (j = 0; j <= nummers.length - i - 2; j++) {
+            if (nummers[j] < nummers[j + 1]) {
+                temp = nummers[j];
+                nummers[j] = nummers[j + 1];
+                nummers[j + 1] = temp;
+            }
+        }
+    }
+    window.alert("De gesorteerde waarde zijn");
+    weergaveArray(nummers);
+}
+
+function sorteer2(nummers) {
+    var i;
+    var j;
+    var temp;
+
+    for (i = 0; i <= nummers.length - 1; i++) {
+        for (j = 0; j <= nummers.length - i - 2; j++) {
+            if (nummers[j] > nummers[j + 1]) {
+                temp = nummers[j];
+                nummers[j] = nummers[j + 1];
+                nummers[j + 1] = temp;
+            }
+        }
+    }
+    window.alert("De gesorteerde waarde zijn");
+    weergaveArray(nummers);
+}
+
+function weergaveArray(nummers) {
+    var teller;
+
+    for (teller = 0; teller <= nummers.length - 1; teller++) {
+        window.alert(nummers[teller]);
+    }
+}
+
+    </script>
+  </body>
+</head>
