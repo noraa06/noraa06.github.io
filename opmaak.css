@@ -22,6 +22,7 @@ header{  /* Wat in de headers is wordt op deze voorkeuren bijgewerkt */
 /* Dropdown Button */
 .dropbtn {
   background-color: rgba(234, 156, 229, 0.57); /* Hier stel je de achtergrondkleur in */
+  background-image:url("afbeeldingen/informaticaa.jpg");   /* foto voor dropdown menu */ ;
   color: white;
   padding: 16px;
   font-size: 16px;
