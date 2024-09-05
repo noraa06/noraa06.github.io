@@ -21,7 +21,7 @@ header{  /* Wat in de headers is wordt op deze voorkeuren bijgewerkt */
 }
 /* Dropdown Button */
 .dropbtn {
-  background-color: #04AA6D;
+  background-color: rgba(234, 156, 229, 0.57); /* Hier stel je de achtergrondkleur in */
   color: white;
   padding: 16px;
   font-size: 16px;
