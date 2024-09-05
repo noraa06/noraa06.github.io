@@ -58,7 +58,7 @@ header{  /* Wat in de headers is wordt op deze voorkeuren bijgewerkt */
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {background-color: rgba(234, 156, 229, 0.57) ;}
 
 .navbar {
   background-color: white;
