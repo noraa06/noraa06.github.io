@@ -1,39 +1,63 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="opmaak.css"/>
-        <title> Dropdown </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">   
-    </head>
-    <body>
-        <header>
-          <nav class="navbar">
-            <span><a id="nav-bar-item" href="index.html">About</a>
-            <ul class="second-level-menu">
-              <span><a href="index.html">Chicago</a></span>
-              </ul>
-            </span> 
-            <span><a id="nav-bar-item" href="index.html">Services</a>
-                <ul class="second-level-menu">
-                    <span><a href="#">Los Angeles</a></span>
-                </ul>
-                </span>
+<head>
+  <link rel="stylesheet" type+"text/css" href="opmaak.css"/>
+  <title> Compressie </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+.dropdown-submenu {
+  position: relative;
+}
 
-                    <li>
-                        <a href="#">New York</a>
-                        <ul class="third-level-menu">
-                            <li><a href="#">Information</a></li>
-                            <li><a href="#">Book a Meeting</a></li>
-                            <li><a href="#">Testimonials</a></li>
-                            <li><a href="#">Jobs</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Seattle</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Contact</a></li>
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+</style>
+</head>
+<body>
+   
+<div class="container">
+  <h2>Multi-Level Dropdowns</h2>
+  <p>In this example, we have created a .dropdown-submenu class for multi-level dropdowns (see style section above).</p>
+  <p>Note that we have added jQuery to open the multi-level dropdown on click (see script section below).</p>                                        
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a tabindex="-1" href="#">HTML</a></li>
+      <li><a tabindex="-1" href="#">CSS</a></li>
+      <li class="dropdown-submenu">
+        <a class="test" tabindex="-1" href="#">New dropdown <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+          <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+          <li class="dropdown-submenu">
+            <a class="test" href="#">Another dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">3rd level dropdown</a></li>
+              <li><a href="#">3rd level dropdown</a></li>
+            </ul>
+          </li>
         </ul>
-        </nav>
+      </li>
+    </ul>
+  </div>
+</div>
 
-        
-          </header>
+<script>
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+</script>
+
+</body>
+</html>
+
