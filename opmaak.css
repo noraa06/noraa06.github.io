@@ -20,45 +20,30 @@ header{  /* Wat in de headers is wordt op deze voorkeuren bijgewerkt */
   z-index: 1; /*zodat de nav niet overlapt wordt door andere dingen tijdens scrollen*/
 }
 
-.third-level-menu
-{
-    position: absolute;
-    top: 0;
-    right: -150px;
-    width: 150px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: none;
+#dropdown-menu .submenu {
+  display: none;
 }
 
-.third-level-menu > li
-{
-    height: 30px;
-    background: #999999;
+#dropdown-menu li:hover .submenu {
+  display: block;
 }
-.third-level-menu > li:hover { background: #CCCCCC; }
-
-.second-level-menu
-{
-    position: absolute;
-    top: 30px;
-    left: 0;
-    width: 150px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: none;
+#dropdown-menu {
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
 }
 
-.second-level-menu > li
-{
-    position: relative;
-    height: 30px;
-    background: #999999;
+#dropdown-menu li {
+  transition: background-color .2s ease;
 }
-.second-level-menu > li:hover { background: #CCCCCC; }
 
+#dropdown-menu li:hover {
+  background-color: #e9ecef;
+}
+
+#dropdown-menu .submenu {
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+}
 .navbar {
   background-color: white;
   background-image: url("afbeeldingen/informaticaa.jpg");   /* foto voor menu */
