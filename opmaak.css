@@ -31,10 +31,14 @@ header{  /* Wat in de headers is wordt op deze voorkeuren bijgewerkt */
   text-decoration: none;
 }
 
-#nav-bar-item, .dropdown:hover { /* Wanneer je met muis over de hoever gaat*/
+#nav-bar-item, .dropdown:hover {/* Wanneer je met muis over de hoever gaat*/
   background: #ddd;
   color: rgb(112, 103, 103);
 }
+#dropdown-item {
+  padding: none
+}
+
 main {  /* voor de footer*/
   padding: 0;
   margin:0;
