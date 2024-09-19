@@ -19,7 +19,7 @@ header{  /* Wat in de headers is wordt op deze voorkeuren bijgewerkt */
   top:0;
   z-index: 1; /*zodat de nav niet overlapt wordt door andere dingen tijdens scrollen*/
 }
-.navbar, .dropdown {
+.navbar {
   background-color: white;
   background-image: url("afbeeldingen/informaticaa.jpg");   /* foto voor menu */
   padding: 24px;  /* Grootte menu */
