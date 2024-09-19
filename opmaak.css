@@ -36,7 +36,7 @@ header{  /* Wat in de headers is wordt op deze voorkeuren bijgewerkt */
   color: rgb(112, 103, 103);
 }
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: rgba(241, 13, 188, 0.874);
 }
 .dropdown-content {
   display: none;
