@@ -35,7 +35,13 @@ header{  /* Wat in de headers is wordt op deze voorkeuren bijgewerkt */
   color: rgb(112, 103, 103);
 }
 #dropdown-item {
-  padding: none
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
 main {  /* voor de footer*/
