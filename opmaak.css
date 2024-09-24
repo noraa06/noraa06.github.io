@@ -34,7 +34,7 @@ header{  /* Wat in de headers is wordt op deze voorkeuren bijgewerkt */
   background: #ddd;
   color: rgb(112, 103, 103);
 }
-#dropdown-item {
+ul {
   display: none;
   padding: 0;
   position: absolute;
