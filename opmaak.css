@@ -54,7 +54,7 @@ header{  /* Wat in de headers is wordt op deze voorkeuren bijgewerkt */
 }
 
 /* Links inside the dropdown */
-.dropdown-content a {
+.dropdown-content{
   color: black;
   text-decoration: none;
   display: block;
