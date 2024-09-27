@@ -63,6 +63,7 @@ header{  /* Wat in de headers is wordt op deze voorkeuren bijgewerkt */
   padding: 10px 24px; /* Padding voor dropdown-items */
   display: block; /* Elke link in de dropdown op een nieuwe regel */
   text-decoration: none; /* Geen onderstreping */
+  position: relative;
 }
 
 .dropdown a:hover {
