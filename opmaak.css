@@ -23,35 +23,51 @@ header{  /* Wat in de headers is wordt op deze voorkeuren bijgewerkt */
   background-image: url("afbeeldingen/informaticaa.jpg");   /* foto voor menu */
   padding: 24px;  /* Grootte menu */
   box-shadow: 0px 2px 5px #aaa;
+  position: relative; /* Voor dropdown positionering */
 }
 #nav-bar-item{
   color: black;
   padding: 24px;
   text-decoration: none;
+  display: inline-block; /* Zorgt dat de links naast elkaar staan */
 }
 
 #nav-bar-item:hover {/* Wanneer je met muis over de hoever gaat*/
   background: #ddd;
   color: rgb(112, 103, 103);
 }
-ul {
-  display: none;
-  padding: 0;
-  position: absolute;
-  overflow: hidden;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
 
-/* Links inside the dropdown */
-.dropdown-content{
-  position: relative;
-  color: black;
-  text-decoration: none;
-  display: block;
-}
+/* Dropdown menu */
+  .dropdown {
+          display: none;
+          position: absolute;
+          background-color: #fff; /* Achtergrondkleur van de dropdown */
+          padding: 0;
+          margin-top: 10px; /* Ruimte tussen de link en dropdown */
+          box-shadow: 0px 2px 5px #aaa;
+          z-index: 1000; /* Zorgt dat het boven andere elementen staat */
+      }
+
+      .navbar span {
+          position: relative; /* Voor dropdown positionering */
+          margin-right: 15px; /* Ruimte tussen de menu-items */
+      }
+
+      .navbar span:hover .dropdown {
+          display: block; /* Toont het dropdown-menu bij hover */
+      }
+
+      .dropdown a {
+          color: black; /* Kleur van de dropdown-links */
+          padding: 10px 24px; /* Padding voor dropdown-items */
+          display: block; /* Elke link in de dropdown op een nieuwe regel */
+          text-decoration: none; /* Geen onderstreping */
+      }
+
+      .dropdown a:hover {
+          background: #ddd; /* Hover effect voor dropdown-items */
+          color: rgb(112, 103, 103);
+      }
 
 main {  /* voor de footer*/
   padding: 0;
