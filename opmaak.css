@@ -41,7 +41,7 @@ header{  /* Wat in de headers is wordt op deze voorkeuren bijgewerkt */
 /* Dropdown menu */
 .dropdown {
   display: none;
-  position: absolute;
+  position: relative;
   background-color: #fff; /* Achtergrondkleur van de dropdown */
   padding: 0;
   margin-top: 10px; /* Ruimte tussen de link en dropdown */
