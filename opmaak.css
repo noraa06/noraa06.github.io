@@ -53,7 +53,8 @@ header{  /* Wat in de headers is wordt op deze voorkeuren bijgewerkt */
   margin-right: 15px; /* Ruimte tussen de menu-items */
 }
 
-.navbar span:hover .dropdown {
+.navbar span:hover .dropdown,
+.dropdown:hover {
   display: block; /* Toont het dropdown-menu bij hover */
 }
 
