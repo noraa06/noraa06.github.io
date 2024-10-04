@@ -23,9 +23,7 @@ header{  /* Wat in de headers is wordt op deze voorkeuren bijgewerkt */
   background-image: url("afbeeldingen/informaticaa.jpg"); /* foto voor menu */
   padding: 24px; /* Grootte menu */
   box-shadow: 0px 2px 5px #aaa;
-  position: relative; /* Voor dropdown positionering */
 }
-
 #nav-bar-item {
   color: black;
   padding: 24px;
