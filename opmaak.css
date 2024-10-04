@@ -41,7 +41,7 @@ header{  /* Wat in de headers is wordt op deze voorkeuren bijgewerkt */
 /* Dropdown menu */
 .dropdown {
   display: none;
-  position: relative;
+  position: absolute;
   background-color: #fff; /* Achtergrondkleur van de dropdown */
   padding: 0;
   margin-top: 10px; /* Ruimte tussen de link en dropdown */
@@ -71,7 +71,24 @@ header{  /* Wat in de headers is wordt op deze voorkeuren bijgewerkt */
   background: #ddd; /* Hover effect voor dropdown-items */
   color: rgb(112, 103, 103);
 }
+/* Submenu */
+.submenu {
+  display: none; /* Standaard is het submenu verborgen */
+  position: absolute; /* Positioneert het submenu relatief aan de bovenliggende dropdown */
+  left: 100%; /* Plaatst het submenu rechts van het dropdown-item */
+  top: 0; /* Zorgt ervoor dat het submenu uitlijnt met het dropdown-item */
+  background-color: #fff; /* Achtergrondkleur van het submenu */
+  box-shadow: 0px 2px 5px #aaa; /* Schaduw voor het submenu */
+  z-index: 1001; /* Zorgt dat het submenu boven andere elementen staat */
+}
+.dropdown a:hover + .submenu {
+  display: block; /* Toont het submenu bij hover over "Dropdown 1" */
+}
 
+.submenu a {
+  padding: 10px 24px; /* Padding voor submenu-items */
+  white-space: nowrap; /* Voorkomt dat de tekst in het submenu wordt afgebroken */
+}
 main {  /* voor de footer*/
   padding: 0;
   margin:0;
