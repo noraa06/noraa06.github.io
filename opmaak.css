@@ -52,7 +52,7 @@ header{  /* Wat in de headers is wordt op deze voorkeuren bijgewerkt */
 }
 
 /* Zorg ervoor dat het eerste submenu wordt weergegeven wanneer je over 'Meer' hovert */
-.dropdown:hover .submenu {
+.dropdown:hover > .submenu {
   display: block;
   left: 0;
   top: 100%;
