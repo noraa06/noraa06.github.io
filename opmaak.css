@@ -59,7 +59,7 @@ header{  /* Wat in de headers is wordt op deze voorkeuren bijgewerkt */
 }
 
 /* Toon het submenu rechts wanneer je over 'Dropdown 1' hovert */
-.dropdown:hover .submenu-right {
+.dropdown:hover > .submenu-right {
   display: block;
   left: 100%; /* Plaats het submenu rechts van 'Dropdown 1' */
   top: 0; /* Zorg dat het submenu op dezelfde hoogte staat als 'Dropdown 1' */
